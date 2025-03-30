@@ -1,0 +1,115 @@
+.whyus-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(10deg, #2c2c2c, #1a1a1a);
+    padding: 15px 20px;
+    margin-top: 50px;
+    width: 99%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.whyus-text {
+    position: relative;
+    color: #e0e0e0;
+    text-align: center;
+    line-height: 1.8;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.whyus-text em {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(10deg, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.whyus-text em:hover {
+    transform: scale(1.05);
+}
+
+.whyus-text p {
+    margin: 70px 0 0 0;
+    font-size: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.whyus-text p:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.whyus-text .highlight {
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* مدیا کوئری برای تبلت */
+@media (max-width: 768px) {
+    .whyus-container {
+        padding: 10px 15px;
+        width: 96%;
+    }
+
+    .whyus-text {
+        padding: 30px;
+    }
+
+    .whyus-text em {
+        font-size: 40px;
+        right: 15px;
+        top: 5px;
+    }
+
+    .whyus-text p {
+        font-size: 18px;
+        padding: 15px;
+        margin-top: 60px;
+    }
+}
+
+/* مدیا کوئری برای گوشی */
+@media (max-width: 576px) {
+    .whyus-container {
+        flex-direction: column;
+        padding: 10px;
+        width: 96%;
+    }
+
+    .whyus-text {
+        padding: 20px;
+    }
+
+    .whyus-text em {
+        font-size: 30px;
+        right: 10px;
+        top: 5px;
+    }
+
+    .whyus-text p {
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+}

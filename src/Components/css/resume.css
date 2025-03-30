@@ -1,0 +1,447 @@
+@import 'devicon/devicon.min.css';
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a, #2d3436);
+    padding: 20px;
+    width: 99%;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    margin: 135px auto 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.resume-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.resume-logo {
+    padding: 0;
+}
+
+.circular-founder-logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-founder-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.resume-name h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+
+.resume-description {
+    text-align: right;
+    color: #d0d0d0;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 90%;
+    font-family: 'Vazirmatn', sans-serif;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.resume-description p {
+    margin: 0;
+}
+
+.resume-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+}
+
+.resume-container2 {
+    background: linear-gradient(135deg, #1a1a1a, #2d3436);
+    padding: 40px 20px;
+    width: 99%;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin: 40px auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.resume-container2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.resume-text2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Vazirmatn', sans-serif;
+    width: 100%;
+    padding: 20px;
+}
+
+.resume-tech-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.resume-tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: 150px; /* افزایش عرض برای متن‌های طولانی */
+    height: 140px; /* افزایش ارتفاع */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tech-card i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover i {
+    transform: scale(1.1);
+}
+
+.tech-name {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-family: 'Vazirmatn', sans-serif;
+    word-break: break-word;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.tech-card:hover .tech-name {
+    color: #00d4ff;
+}
+
+
+
+@media (max-width: 804px) {
+    .resume-container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .resume-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .resume-name h1 {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+
+    .resume-description {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .circular-founder-logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .resume-container2, .resume-container3, .resume-container4 {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .resume-text2, .resume-text3, .resume-text4 {
+        padding: 15px;
+    }
+
+    .tech-card {
+        width: 100px;
+        height: 120px;
+    }
+
+    .tech-card i {
+        font-size: 40px;
+    }
+
+    .tech-name {
+        font-size: 0.9rem;
+    }
+
+    .resume-tech-title {
+        font-size: 1.5rem;
+    }
+
+    .experience-list li {
+        font-size: 16px;
+    }
+    .section-title {
+        font-size: 1.5rem;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .resume-container {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .resume-name h1 {
+        font-size: 28px;
+    }
+
+    .circular-founder-logo {
+        height: 120px;
+        width: 120px;
+    }
+
+    .tech-card {
+        width: 105px;
+        height: 115px;
+        padding: 2px;
+    }
+
+    .tech-card i {
+        font-size: 22px;
+    }
+    .resume-tech-icons{
+        gap: 5px;
+        padding: 1px;
+    }
+    .tech-name {
+        font-size: 0.8rem;
+    }
+
+    .experience-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .section-title {
+        font-size: 1.2rem;
+        padding-right: 10px;
+    }
+}
+/* کارت ترکیبی */
+.resume-container-combined {
+    background: linear-gradient(135deg, #1a1a1a, #2d3436);
+    padding: 40px;
+    width: 99%;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin: 40px auto;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-container-combined:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.resume-container-combined::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+}
+
+.resume-text-combined {
+    display: flex;
+    flex-direction: row; /* کنار هم قرار گرفتن */
+    gap: 40px; /* فاصله بین دو بخش */
+    color: #ffffff;
+    font-family: 'Vazirmatn', sans-serif;
+    width: 100%;
+    padding: 20px;
+}
+
+/* بخش‌های تجربه و تحصیلات */
+.experience-section, .education-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex: 1; /* هر بخش نصف فضا رو بگیره */
+    min-width: 0; /* برای جلوگیری از سرریز شدن */
+}
+
+.experience-section:hover, .education-section:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* استایل تیترها */
+.section-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: right;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Vazirmatn', sans-serif;
+    padding-right: 20px;
+}
+
+/* تنظیم لیست‌ها */
+.experience-list {
+    direction: rtl;
+    padding-right: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.experience-list li {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-list li::before {
+    content: '•';
+    position: absolute;
+    right: 0;
+    color: #ffffff;
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: default;
+}
+
+.experience-list li:hover {
+    color: #000000;
+    transform: translateX(-10px);
+    cursor: default;
+}
+
+/* ریسپانسیو کردن */
+@media (max-width: 1500px) {
+    .resume-container-combined {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .resume-text-combined {
+        flex-direction: column; /* تو موبایل زیر هم قرار بگیرن */
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .experience-section, .education-section {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        padding-right: 15px;
+    }
+
+    .experience-list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .resume-container-combined {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .resume-text-combined {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        padding-right: 10px;
+    }
+
+    .experience-section, .education-section {
+        padding: 10px;
+    }
+
+    .experience-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}

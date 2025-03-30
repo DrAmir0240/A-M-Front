@@ -1,0 +1,26 @@
+.task-input {
+    background-color: #333 !important;
+    color: #E0E0E0 !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.task-input:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px #BB86FC !important;
+}
+
+.date-picker-wrapper {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .task-input {
+        font-size: 14px !important;
+        padding: 10px !important;
+    }
+}

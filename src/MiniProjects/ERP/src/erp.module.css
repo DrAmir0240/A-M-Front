@@ -1,0 +1,176 @@
+/* erp.module.css */
+
+/* تعریف متغیرها برای رنگ‌ها و فونت‌ها (مشابه بوت‌استرپ) */
+:root {
+    --primary: #007bff;
+    --success: #28a745;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light);
+}
+
+/* کانتینر اصلی */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* سایدبار */
+.sidebar {
+    width: 250px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navLink:hover {
+    color: #0056b3;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+/* محتوای اصلی */
+.content {
+    flex-grow: 1;
+    padding: 1.5rem;
+}
+
+/* کارت‌ها */
+.card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* دکمه‌ها */
+.button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.deleteButton {
+    color: var(--danger);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.deleteButton:hover {
+    color: #b02a37;
+}
+
+/* جداول */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f1f3f5;
+    font-weight: bold;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* فرم‌ها */
+.input,
+.select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><path d="M0 0l5 5 5-5z" fill="%236c757d"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 10px 5px;
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
